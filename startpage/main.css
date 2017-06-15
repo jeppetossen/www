@@ -5,9 +5,11 @@ body {
 input[type="text"] {
     display: block;
     text-align: center;
-    margin: 12.5% auto;
+    margin: 3% auto;
     padding: 3px;
     width: 50%;
+    padding-left: 0;
+    margin-top: 15%;
 }
 
 ul {
@@ -15,21 +17,23 @@ ul {
 }
 
 .header-links {
-
+    height: 0;
+    line-height: 0;
+    padding: 0;
 }
 
-.header-links li {
+.header-links a {
     float: left;
+    width: 100%;
 }
 
-.header-links ul {
-    display: inline-block;
+.header-links p {
+    display: inline;
 }
 
 .header-links h1 {
     font-family: DejaVu Sans Mono;
     font-size: 28px;
-    bottom: 50%;
 }
 
 .header-links #reddit-header {
@@ -42,15 +46,16 @@ ul {
 .header-links #sweclockers-header {
     text-align: center;
     position: absolute;
-    top: auto;
+    width: 100%;
+    left: 0;
     padding-left: 0;
 }
 
 .header-links #youtube-header {
     text-align: right;
     position: absolute;
-    width: 25%;
-    left: 0%;
+    width: 75%;
+    left: 0;
 }
 
 .header-links h1 a:link,
@@ -61,6 +66,63 @@ ul {
 
 .header-links h1 a:hover {
     color: rgba(82, 168, 224, 0.95);
+    text-decoration: underline;
+}
+
+
+.box-links {
+    height: 0;
+    line-height: 0;
+    padding: 0;
+}
+
+.box-links a {
+    float: left;
+    width: 100%;
+}
+
+.box-links p {
+    display: inline-block;
+}
+
+.box-links li {
+    font-family: DejaVu Sans Mono;
+    font-size: 22px;
+    display: table;
+}
+
+.box-links #left-links {
+    text-align: left;
+    position: absolute;
+    top: 50%;
+    width: 0%;
+    left: 22.5%;
+}
+
+.box-links #center-links {
+    text-align: center;
+    position: relative;
+    top: 55%;
+    width: 0%;
+    left: 44%;
+}
+
+.box-links #right-links {
+    text-align: right;
+    position: absolute;
+    top: 50%;
+    width: 0%;
+    left: 64.5%;
+}
+
+.box-links a:link,
+.box-links a:visited {
+    color: #1083c4;
+    text-decoration: none;
+}
+
+.box-links a:hover {
+    color: #0b458a;
 }
 
 #bottom-row {
